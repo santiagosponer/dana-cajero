@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp | Red VIP Palace</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+
+    .header img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .header span {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #25D366;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    .contact-name {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-top: 10px;
+      color: #000;
+    }
+
+    .contact-desc {
+      font-size: 0.85em;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .cta-button {
+      background-color: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      width: 220px;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .cta-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    .footer-links {
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 30px;
+    }
+
+    .footer-links a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .testimonials {
+      margin-top: 40px;
+      font-size: 0.9em;
+      text-align: left;
+    }
+
+    .testimonial {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .testimonial:hover {
+      background-color: #f1f1f1;
+    }
+
+    .stars {
+      color: #f1c40f;
+      font-size: 1em;
+      margin-bottom: 5px;
+    }
+
+    .testimonial p {
+      margin: 0;
+    }
+  </style>
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1176695860131538');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1176695860131538&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <script>
+    const whatsappNumber = "3512040276";
+
+    function goToWhatsApp() {
+      fbq('track', 'Contact');
+      window.location.href = `https://wa.me/${whatsappNumber}?text=Hola!%20Vi%20este%20anuncio,%20mi%20nombre%20es:%20quiero%20más%20info%20por%20favor!`;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="header" onclick="goToWhatsApp()">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+      <span>WhatsApp</span>
+    </div>
+
+    <a href="javascript:void(0);" onclick="goToWhatsApp()">
+      <img src="perfil-vip.png" alt="Perfil" class="profile-pic" />
+    </a>
+    <div class="contact-name">RED VIP PALACE 👑</div>
+    <div class="contact-desc">Bono de bienvenida (con carga)</div>
+    <div class="contact-desc">Carga mínima: $2000</div>
+
+    <a class="cta-button" href="javascript:void(0);" onclick="goToWhatsApp()">¡CREAR USUARIO AHORA!</a>
+
+    <div class="footer-links">
+      <p><a href="javascript:void(0);" onclick="goToWhatsApp()">¿Aún no tienes WhatsApp? Descargar</a></p>
+      <p><a href="javascript:void(0);" onclick="goToWhatsApp()">Términos y condiciones</a> | <a href="javascript:void(0);" onclick="goToWhatsApp()">Política de privacidad</a></p>
+    </div>
+
+    <div class="testimonials">
+      <div class="testimonial" onclick="goToWhatsApp()">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>Romina.S: "Excelente atención, me dieron un gran bono. Recomendado!”</p>
+      </div>
+      <div class="testimonial" onclick="goToWhatsApp()">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>Juan pablo.T: "Muy profesional, confiable. Siempre jugando con ellos 👑”</p>
+      </div>
+      <div class="testimonial" onclick="goToWhatsApp()">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>Susana.D: "Fácil, rápido y seguro. Increíble experiencia.”</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
